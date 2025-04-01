@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .container {
+            display: grid;
+            grid-template-rows: auto auto;
+            gap: 20px;
+            max-width: 800px;
+            padding: 20px;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            width: 100%;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 800px;
+            border-radius: 10px;
+        }
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Episodes</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Welcome to the Podcast Website</h1>
+        <img src="https://images.pexels.com/photos/3727464/pexels-photo-3727464.jpeg" alt="Podcast image">
+        <p>Explore amazing podcasts and enjoy insightful conversations.</p>
+    </div>
+</body>
+</html>
